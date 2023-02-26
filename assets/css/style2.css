@@ -1,0 +1,848 @@
+/**
+* Template Name: Ninestars - v4.10.0
+* Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #212529;
+  }
+  
+  a {
+    color: #eb5d1e;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ef7f4d;
+    text-decoration: none;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-primary {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  /*--------------------------------------------------------------
+  # Back to top button
+  --------------------------------------------------------------*/
+  .back-to-top {
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 99999;
+    background: #eb5d1e;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.4s;
+  }
+  
+  .back-to-top i {
+    font-size: 24px;
+    color: #fff;
+    line-height: 0;
+  }
+  
+  .back-to-top:hover {
+    background: #ee7843;
+    color: #fff;
+  }
+  
+  .back-to-top.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*--------------------------------------------------------------
+  # Disable aos animation delay on mobile devices
+  --------------------------------------------------------------*/
+  @media screen and (max-width: 768px) {
+    [data-aos-delay] {
+      transition-delay: 0 !important;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  #header {
+    height: 72px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    background: #fff;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #header .logo h1 {
+    font-size: 30px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 2px;
+  }
+  
+  #header .logo h1 a,
+  #header .logo h1 a:hover {
+    color: #7a6960;
+    text-decoration: none;
+  }
+  
+  #header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+  
+  #main {
+    margin-top: 72px;
+  }
+  #header .container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 3%;
+    padding-top: 1%;
+  }
+  .author figcaption.subtitle{
+    text-align: center;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  .author figcaption.subtitle-first{
+    padding-bottom: 1%;
+    padding-top: 5%;
+  }
+  figure{
+    text-align: center;
+    margin-top: 0px;
+  }
+  .datos-bach{
+    display: flex;
+    justify-content: center;
+  }
+  .datos-bach-features{
+    margin-top: 0px;
+    color: #4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  .subtitle-first{
+   color: #4e4039;
+   font-family: "Raleway", sans-serif;
+   padding-top: 3%;
+  }
+  .subtitle-vision{
+    text-align: center;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  .group-vision{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  section.author{
+    padding-bottom: 0px;
+  }
+  section.vision{
+    padding: 30px;
+    padding-top: 4%;
+  }
+  figcaption{
+    padding-bottom: 20px;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  #terapia{
+    background-color: #fef8f5;
+    padding-bottom: 2%;
+  }
+  .subtitle-terapia{
+    text-align: center;
+    padding-bottom: 2%;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  .terapia-text{
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  blockquote cite{
+    margin-left: 8%;
+    margin-right: 8%;
+    padding-left: 14%;
+    padding-right: 14%;
+    padding-bottom: 3%;
+    color: red;
+    font-weight: 900;
+    font-family: "Raleway", sans-serif;
+  }
+  section.terapia{
+    padding: 30px;
+    padding-bottom: 0px;
+  }
+  section.elaboracion{
+    padding: 0px;
+  }
+  section.elaboracion blockquote{
+    padding-bottom: 3%;
+  }
+  .subtitle-elaboracion{
+    text-align: center;
+    padding-top: 3%;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  .elaboracion-text{
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  blockquote cite .fotosintesis{
+    margin-left: 4%;
+    margin-right: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 0px;
+    color: red;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+  }
+  #esencias{
+    background-color: #fef8f5;
+    padding-top: 2%;
+  }
+  section.esencias{
+    padding: 0px;
+  }
+  div.group-esencias{
+    padding-bottom: 3%;
+  }
+  .subtitle-esencias{
+    text-align: center;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  .esencias-text{
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    color:#4e4039;
+    font-family: "Raleway", sans-serif;
+  }
+  div.group-1esencias{
+    display: flex;
+  }
+  .group-1esencias figure{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4%;
+    padding-left: 3%;
+  }
+  .group-1esencias figcaption{
+    padding-top: 5%;
+    margin-left: 2%;
+    text-align: justify;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-left: 10%;
+  }
+  div.group-2esencias{
+    display: flex;
+  }
+  .group-2esencias figure{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 1%;
+  }
+  .group-2esencias figcaption{
+    padding-top: 3%;
+    margin-left: 2%;
+    text-align: justify;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-left: 7%;
+  }
+  div.group-3esencias{
+    display: flex;
+  }
+  .group-3esencias figure{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 1%;
+  
+  }
+  .group-3esencias figcaption{
+    padding-top: 3%;
+    margin-left: 8%;
+    text-align: justify;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-left: 10%;
+  }
+  div.group-4esencias{
+    display: flex;
+  }
+  .group-4esencias figure{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 1%;
+  }
+  .group-4esencias figcaption{
+    padding-top: 5%;
+    margin-left: 2%;
+    text-align: justify;
+    margin-right: 2%;
+    padding-right: 2%;
+    padding-left: 10%;
+  }
+
+
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+  .navbar {
+    padding: 0;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 15px;
+    color: #4e4039;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: #eb5d1e;
+  }
+  
+  .navbar .getstarted,
+  .navbar .getstarted:focus {
+    background: #eb5d1e;
+    color: #fff;
+    padding: 10px 25px;
+    margin-left: 30px;
+    border-radius: 50px;
+  }
+  
+  .navbar .getstarted:hover,
+  .navbar .getstarted:focus:hover {
+    color: #fff;
+    background: #ee7843;
+  }
+  
+  
+  
+  .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+  }
+  
+  @media(min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+  }
+  
+  @media (max-width: 1366px) {
+    .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+  
+    .navbar .dropdown .dropdown:hover>ul {
+      left: -100%;
+    }
+  }
+  
+  /**
+  * Mobile Navigation 
+  */
+  .mobile-nav-toggle {
+    color: #7a6960;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  
+  .mobile-nav-toggle.bi-x {
+    color: #fff;
+  }
+  
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  }
+  
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(78, 64, 57, 0.9);
+    transition: 0.3s;
+  }
+  
+  .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  
+  .navbar-mobile a,
+  .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #7a6960;
+  }
+  
+  .navbar-mobile a:hover,
+  .navbar-mobile .active,
+  .navbar-mobile li:hover>a {
+    color: #eb5d1e;
+  }
+  
+  .navbar-mobile .getstarted,
+  .navbar-mobile .getstarted:focus {
+    margin: 15px;
+  }
+  
+  .navbar-mobile .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  }
+  
+  .navbar-mobile .dropdown ul li {
+    min-width: 200px;
+  }
+  
+  .navbar-mobile .dropdown ul a {
+    padding: 10px 20px;
+  }
+  
+  .navbar-mobile .dropdown ul a i {
+    font-size: 12px;
+  }
+  
+  .navbar-mobile .dropdown ul a:hover,
+  .navbar-mobile .dropdown ul .active:hover,
+  .navbar-mobile .dropdown ul li:hover>a {
+    color: #eb5d1e;
+  }
+  
+  .navbar-mobile .dropdown>.dropdown-active {
+    display: block;
+  }
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+  #footer {
+    background: #fff;
+    padding: 0 0 30px 0;
+    color: #212529;
+    font-size: 14px;
+    background: #fef8f5;
+  }
+  
+  
+  #footer .footer-top {
+    padding: 60px 0 30px 0;
+    background: #fff;
+  }
+  
+  #footer .footer-top .footer-contact {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-contact h4 {
+    font-size: 22px;
+    margin: 0 0 30px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+  }
+  
+  #footer .footer-top .footer-contact p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    color: #5c5c5c;
+  }
+  
+  #footer .footer-top h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #212529;
+    position: relative;
+    padding-bottom: 12px;
+  }
+  
+  #footer .footer-top .footer-links {
+    margin-bottom: 30px;
+  }
+  
+  #footer .footer-top .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #footer .footer-top .footer-links ul i {
+    padding-right: 2px;
+    color: #f39e7a;
+    font-size: 18px;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+  }
+  
+  #footer .footer-top .footer-links ul a {
+    color: #5c5c5c;
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+  }
+  
+  #footer .footer-top .footer-links ul a:hover {
+    text-decoration: none;
+    color: #eb5d1e;
+  }
+  
+  #footer .footer-top .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #eb5d1e;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 34px;
+    height: 34px;
+    transition: 0.3s;
+  }
+  
+  #footer .footer-top .social-links a:hover {
+    background: #ef7f4d;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .copyright {
+    text-align: center;
+    float: left;
+  }
+  
+  #footer .credits {
+    float: right;
+    text-align: center;
+    font-size: 13px;
+    color: #212529;
+  }
+  
+  #footer .credits a {
+    color: #eb5d1e;
+  }
+/* 
+  footer div.container{
+    padding-left: 70px;
+    padding-right: 70px;
+  } */
+  div.row.footer-part{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  /* }
+  footer .footer-top .footer-contact{
+    width: 25%;
+  } */
+  /* #footer .footer-top .footer-links{
+    width: 25%;
+  }
+ /* div.row{ */
+    /* --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+  }
+  */
+  h3.footer-title{ 
+    margin-top: 8%;
+  }
+  div.social-links.mt-3{
+    margin-top: 1rem;
+  }
+
+div.row.footer-part{
+  --bs-gutter-x: 16rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.container .py-4{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.py-4 {
+    padding-top: 1.5rem!important;
+    padding-bottom: 1.5rem!important;
+    padding-right: 10%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#footer.copyright{
+    float: none;
+    text-align: center;
+    padding: 3px 0;
+    font-size: 14px;
+    color: #21252;
+}
+#footer .credits{
+    float: none;
+    text-align: center;
+    padding: 3px 0;
+    font-size: 14px;
+    color: #21252;
+}
+#header .logo img{
+    max-height: 47px;
+  }  
+
+  @media (max-width: 575px) {
+  
+    #navbar{
+        margin-top: 4%;
+    }
+    section.author{
+        padding-top: 3%;
+    }
+    figcaption#bach.subtitle-first{
+    padding-bottom: 1%;
+    padding-top: 5%;
+    }
+    div.datos-bach{
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    }
+    img.img-author{
+        width: 350px;
+        margin-top: 2%;
+    }
+    .subtitle-vision{
+        padding-bottom: 6%;
+    }
+    .group-vision{
+        display: block;
+    }
+    img.espiritual{
+        padding-bottom: 10%;
+    }
+    img.psicologico{
+        padding-bottom: 10%;
+    }
+    h3.subtitle-terapia{
+        padding-bottom: 7%;
+    }
+    p.terapia-text{
+        padding-bottom: 10%;
+    }
+    #terapia{
+        padding-bottom: 8%;
+    }
+    blockquote{
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    h3.subtitle-elaboracion{
+        padding-top: 11%;
+        padding-bottom: 3%;
+    }
+    h3.subtitle-esencias{
+        padding-top: 6%;
+        padding-bottom: 6%;
+    }
+    div.group-1esencias{
+        padding-top: 2%;
+    }
+    div.group-1esencias figure{
+        display: block;
+        margin-right: 10%;
+        padding-right: 2%;
+        margin-left: 10%;
+        padding-left: 2%;
+    }
+    div.group-2esencias figure{
+        display: block;
+        margin-right: 10%;
+        padding-right: 2%;
+        margin-left: 10%;
+        padding-left: 2%;
+    }
+    div.group-3esencias figure{
+        display: block;
+        margin-right: 10%;
+        padding-right: 2%;
+        margin-left: 10%;
+        padding-left: 2%;
+    }
+    .group-3esencias figcaption{
+        margin-left: 0;
+    }
+    div.group-4esencias figure{
+        display: block;
+        margin-right: 10%;
+        padding-right: 2%;
+        margin-left: 10%;
+        padding-left: 2%;
+    }
+    div.row.footer-part{
+        display: block;
+        text-align: center;
+    }
+   .footer-links ul li a{
+        text-align: center;
+        padding-left: 40%;
+    }
+    #footer .footer-top .social-links a{
+        height: 34px;
+    }
+    #footer div.container.py-4{
+        display: block;
+      }
+
+    #footer .copyright,
+    #footer .credits {
+      float: none;
+      -moz-text-align-last: center;
+      text-align-last: center;
+      padding: 3px 0;
+    }
+  }
+
+
