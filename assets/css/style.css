@@ -461,6 +461,9 @@ h5.second-text{
   #hero .hero-img img {
     width: 80%;
   }
+  figure.certificado{
+    text-align: center;
+  }
 }
 
 @media (max-height: 600px) {

@@ -340,7 +340,9 @@ body {
     padding-right: 2%;
     padding-left: 10%;
   }
-
+  h3.subtitle-vision.pb-2{
+    margin-bottom: 2%;
+ }
 
   /*--------------------------------------------------------------
   # Navigation Menu
