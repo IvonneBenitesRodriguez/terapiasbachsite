@@ -446,7 +446,9 @@ h5.second-text{
     font-size: 28px;
     line-height: 36px;
   }
-
+  figure.certificado{
+    text-align: center;
+  }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
